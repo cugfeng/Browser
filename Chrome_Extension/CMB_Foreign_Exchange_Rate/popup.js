@@ -11,8 +11,13 @@ var rateGenerator = {
   parseRates_: function (e) {
     var node = document.createElement('HTML');
 	node.innerHTML = e.target.responseText;
-	var rates = node.getElementsByClassName('data');
-	document.body.appendChild(rates[0]);
+	var table = node.getElementsByClassName('data')[0];
+	for (var i = table.rows.length - 1; i >= 0; i--) {
+	  table.rows[i].deleteCell(8);
+	  table.rows[i].deleteCell(6);
+	  table.rows[i].deleteCell(3);
+	}
+	document.body.appendChild(table);
   },
 };
 

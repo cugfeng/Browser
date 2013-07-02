@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "招商银行外汇汇率",
-  "description": "This extension is to show foreign exchange rate on CMB.",
-  "version": "1.0",
+  "description": "此扩展用于实时获取招商银行外汇汇率。",
+  "version": "1.1",
 
   "browser_action": {
     "default_icon": "icon.png",
