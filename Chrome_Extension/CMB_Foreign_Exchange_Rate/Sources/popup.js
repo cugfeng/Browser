@@ -13,8 +13,8 @@ var rateGenerator = {
 	node.innerHTML = e.target.responseText;
 	var table = node.getElementsByClassName('data')[0];
 	for (var i = table.rows.length - 1; i >= 0; i--) {
+	  table.rows[i].deleteCell(9);
 	  table.rows[i].deleteCell(8);
-	  table.rows[i].deleteCell(6);
 	  table.rows[i].deleteCell(3);
 	}
 	document.body.appendChild(table);
